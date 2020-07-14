@@ -1,45 +1,49 @@
 <html>
+
 <head>
-<title>jQuery Demo 1</title>
-<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.6.2.min.js"></script>
+	<title>jQuery Demo 1</title>
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.6.2.min.js"></script>
 </head>
 
 <body>
-<style type="text/css">
-a#trigger {
-display:inline-block;
-background:yellow;
-margin:10px;
-padding:10px;
-border:1px solid orange;
-}
+	<style type="text/css">
+		a#trigger {
+			display: inline-block;
+			background: yellow;
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid orange;
+		}
 
-#target {
-display:none;
-width:400px;
-background:lightblue;
-border:1px solid blue;
-margin:10px;
-padding:10px;
-}
-</style>
+		#target {
+			display: none;
+			width: 400px;
+			background: lightblue;
+			border: 1px solid blue;
+			margin: 10px;
+			padding: 10px;
+		}
 
-<div id="content">
+	</style>
 
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('a#trigger').click(function() {
-			$('div#target').toggle();
-			return false;
-		});
-	});
-	</script>
+	<div id="content">
 
-	<a href="#" id="trigger">Show the target DIV</a>
-	<div id="target">
-		<p>This is the hidden div with the content you want to show or hide.</p>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('a#trigger').click(function() {
+					$('div#target').toggle();
+					return false;
+				});
+			});
+
+		</script>
+
+		<a href="#" id="trigger">Show the target DIV</a>
+		<div id="target">
+			<p>This is the hidden div with the content you want to show or hide.</p>
+		</div>
+
 	</div>
-
-</div>
 </body>
+
 </html>
