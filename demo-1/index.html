@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>jQuery Demo 3 - Fade Effect</title>
+	<title>jQuery Demo 1</title>
 	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.6.2.min.js"></script>
 </head>
 
@@ -23,6 +23,12 @@
 			margin: 10px;
 			padding: 10px;
 		}
+		.back-link {
+			font-size: 1.25rem;
+			margin-bottom: 1rem;
+			display: block;
+			text-decoration: none;
+		}
 
 	</style>
 
@@ -31,12 +37,13 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('a#trigger').click(function() {
-					$('div#target').fadeToggle();
+					$('div#target').toggle();
 					return false;
 				});
 			});
 
 		</script>
+		<a class="back-link" href="/news/tutorial-jquery-showhide-basics/" title="Tutorial: jQuery show/hide basics"><< Back to Tutorial: jQuery show/hide basics</a>
 
 		<a href="#" id="trigger">Show the target DIV</a>
 		<div id="target">
